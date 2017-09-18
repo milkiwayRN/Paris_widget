@@ -1,0 +1,157 @@
+section.widget_paris_bg {
+  background-image: url("widget_paris/Light source_wdgt_prs.png");
+  font-family: 'Lato',sans-serif;
+  font-size: 15px;
+  font-weight:300;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  color: white;
+  position: relative;
+}
+main.widget_paris_main {
+  background-image: url("widget_paris/Paris_wdgt_prs.png");
+  width: 696px;
+  height: 435px;
+  position: relative;
+  left: 56px;
+  top: 69px;
+  display: block;
+/*  margin: auto;*/
+}
+ul.widget_paris_sidebar {
+  /*background-color: rgb(0, 50, 0);
+  opacity: 0.302;
+  */
+  height: 107px;
+  width: 696px;
+  position: absolute;
+  top: 328px;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 50px;
+  margin:0px;
+
+
+}
+ul.widget_paris_sidebar > li {
+  float:left;
+  height: 107px;
+  width: 107px;
+  margin: 0px 10px;
+/*  border: 1px solid green;*/
+  box-sizing:border-box;
+  padding: 0.5em 0px 0px 0px;
+
+
+
+}
+
+ul.widget_paris_sidebar li.widget_paris_button  {
+  width:12px;
+}
+ul.widget_paris_sidebar li.widget_paris_button img {
+  position: relative;
+  top:25px;
+}
+
+ul.widget_paris_sidebar img {
+  margin: 10px auto 3px auto;
+}
+
+
+div.widget_paris_weather_infobar {
+  position: absolute;
+  top:80px;
+  right:70px;
+  width: auto;
+  height:155px;
+  /*border:1px solid black;*/
+
+}
+div.widget_paris_date {
+  float:left;
+  display:inline;
+  width:auto;
+  height:155px;
+  /*border:1px solid yellow;*/
+  position:relative;
+  left:0px;
+  text-align: center;
+  line-height: 0.5em;
+}
+div.widget_paris_about_weather{
+  float:left;
+  display:inline;
+  width:auto;
+  height:155px;
+  /*border:1px solid green;*/
+  position:relative;
+  /*left:140px;*/
+}
+
+div.widget_paris_date > span:nth-child(1) {
+  font-size: 30px;
+  line-height: 1.3em;
+}
+
+div.widget_paris_date > span:nth-child(3) {
+  font-size: 14px;
+}
+
+div.widget_paris_about_weather > span:nth-child(1)  {
+  font-size: 92px;
+  line-height: 0.2em;
+  font-weight: 900;
+}
+
+div.widget_paris_about_weather > span:nth-child(3) {
+  font-size: 22px;
+  padding-left: 5px;
+  line-height: 2em;
+}
+
+div.widget_paris_about_weather > span:nth-child(5) {
+  font-size: 30px;
+  font-weight:700;
+  padding-left: 5px;
+  line-height: 1.5em;
+}
+
+div.widget_paris_about_weather > span:nth-child(5) > span:nth-child(2) {
+  font-size: 13px;
+  font-weight:700;
+}
+
+/*span.widget_paris_span_l1_font {
+  font-size: 30px;
+  line-height: 1.3em;
+}
+span.widget_paris_span_l4_font {
+  font-size: 22px;
+  padding-left: 5px
+}
+span.widget_paris_span_l2_font {
+  font-size: 14px;
+
+}
+
+span.widget_paris_span_l5_font {
+  font-size: 30px;
+  font-weight:700;
+  padding-left: 5px;
+}
+span.widget_paris_span_l6_font {
+  font-size: 13px;
+  font-weight:700;
+}
+*/
+section.widget_paris_bg div.divider
+{
+  float:left;
+  display: inline;
+  width: 1px;
+  height: 81px;
+  margin: 13px 0px;
+  border-left: 1px solid #9c9695;
+}
