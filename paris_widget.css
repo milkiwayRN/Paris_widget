@@ -56,7 +56,8 @@ html {
   display: inline-block;
   text-align: center;
   list-style-type: none;
-  margin: 0rem 0rem 0rem 1.6rem;
+  margin:0px 0px 0px 24px;/*отступаем от картинки слева
+  всегда строго на её ширину + обнуляем отступы списка*/
   padding: 0rem;
   /*border: 1px solid yellow;*/
 }
