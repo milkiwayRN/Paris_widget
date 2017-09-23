@@ -1,157 +1,149 @@
-section.widget_paris_bg {
-  background-image: url("widget_paris/Light source_wdgt_prs.png");
-  font-family: 'Lato',sans-serif;
+html {
   font-size: 15px;
-  font-weight:300;
-  width: 800px;
-  height: 600px;
-  margin: auto;
+}
+
+.widget_paris_bg {
+  background-image: url("widget_paris/Light source_wdgt_prs.png");
+  background-size: 100% 100%;
+  font-family: 'Lato',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 53.33rem;
+  height: 40rem;
   color: white;
-  position: relative;
+  margin: auto;
 }
-main.widget_paris_main {
+
+.widget_paris {
   background-image: url("widget_paris/Paris_wdgt_prs.png");
-  width: 696px;
-  height: 435px;
+  background-size: 100% 100%;
   position: relative;
-  left: 56px;
-  top: 69px;
-  display: block;
-/*  margin: auto;*/
+  width: 46.4rem;
+  height: 29rem;
+  left: 3.73rem;
+  top: 4.6rem;
 }
-ul.widget_paris_sidebar {
-  /*background-color: rgb(0, 50, 0);
-  opacity: 0.302;
-  */
-  height: 107px;
-  width: 696px;
+
+.widget_paris_sidebar {
+  height: 7.2rem;
+  width: 100%;
   position: absolute;
-  top: 328px;
+  bottom: 0rem;
+}
+
+.widget_paris_sidebar > .layout {
+  width: 81%;
+  height: 100%;
+  margin: 0rem auto;
+  /*border: 1px solid green;*/
+}
+
+.widget_paris_sidebar .layout button {
+  position: absolute;
+  top: 0rem;
+  bottom: 0rem;
+  margin: auto 0rem;
+  height: 2.66rem;
+  background: none;
+  border: none;
+}
+
+.widget_paris_sidebar > .layout button:focus {
+  outline: none;
+}
+
+.widget_paris_sidebar_list_predictions {
+  display: inline-block;
   text-align: center;
   list-style-type: none;
-  padding-left: 50px;
-  margin:0px;
-
-
-}
-ul.widget_paris_sidebar > li {
-  float:left;
-  height: 107px;
-  width: 107px;
-  margin: 0px 10px;
-/*  border: 1px solid green;*/
-  box-sizing:border-box;
-  padding: 0.5em 0px 0px 0px;
-
-
-
+  margin: 0rem 0rem 0rem 1.6rem;
+  padding: 0rem;
+  /*border: 1px solid yellow;*/
 }
 
-ul.widget_paris_sidebar li.widget_paris_button  {
-  width:12px;
-}
-ul.widget_paris_sidebar li.widget_paris_button img {
-  position: relative;
-  top:25px;
+.widget_paris_sidebar_list_predictions > li {
+  float: left;
+  height: 5.4rem;
+  width: 8.53rem;
+  margin: 0.86rem 0rem;
+  box-sizing: border-box;
+  padding: 0rem;
+  border-right: 1px solid #9c9695;
+  /*border: 1px solid white;*/
 }
 
-ul.widget_paris_sidebar img {
-  margin: 10px auto 3px auto;
+.widget_paris_sidebar_list_predictions > li:last-child {
+  border: none;
 }
 
-
-div.widget_paris_weather_infobar {
+.widget_paris_sidebar_list_predictions > li > span:last-child {
   position: absolute;
-  top:80px;
-  right:70px;
-  width: auto;
-  height:155px;
-  /*border:1px solid black;*/
-
+  bottom: 0.66rem;
+  margin-left: -0.66rem;
 }
-div.widget_paris_date {
-  float:left;
-  display:inline;
-  width:auto;
-  height:155px;
-  /*border:1px solid yellow;*/
-  position:relative;
-  left:0px;
+
+.widget_paris_sidebar_list_predictions > li > img {
+  margin-top: 0.33rem;
+}
+
+.widget_paris_weather_infobar {
+  position: absolute;
+  top: 5.33rem;
+  right: 4.66rem;
+  width: auto;
+  /*border: 1px solid black;*/
+}
+
+.widget_paris_weather_infobar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.widget_paris_date {
+  float: left;
+  width: auto;
   text-align: center;
   line-height: 0.5em;
-}
-div.widget_paris_about_weather{
-  float:left;
-  display:inline;
-  width:auto;
-  height:155px;
-  /*border:1px solid green;*/
-  position:relative;
-  /*left:140px;*/
+  /*border:1px solid yellow;*/
 }
 
-div.widget_paris_date > span:nth-child(1) {
-  font-size: 30px;
+.widget_paris_about_weather{
+  float: left;
+  width: auto;
+  /*border: 1px solid green;*/
+}
+
+.widget_paris_span_day_of_week {
+  font-size: 2em;
   line-height: 1.3em;
 }
 
-div.widget_paris_date > span:nth-child(3) {
-  font-size: 14px;
+.widget_paris_span_date {
+  font-size: 0.93em;
+
 }
 
-div.widget_paris_about_weather > span:nth-child(1)  {
-  font-size: 92px;
-  line-height: 0.2em;
+.widget_paris_span_temp {
+  font-size: 6.13em;
+  line-height: 0.8em;
   font-weight: 900;
 }
 
-div.widget_paris_about_weather > span:nth-child(3) {
-  font-size: 22px;
-  padding-left: 5px;
+.widget_paris_span_location {
+  font-size: 1.46em;
+  padding-left: 0.33em;
   line-height: 2em;
 }
 
-div.widget_paris_about_weather > span:nth-child(5) {
-  font-size: 30px;
-  font-weight:700;
-  padding-left: 5px;
+.widget_paris_span_wind_speed {
+  font-size: 2em;
+  font-weight: 700;
+  padding-left: 0.33em;
   line-height: 1.5em;
 }
 
-div.widget_paris_about_weather > span:nth-child(5) > span:nth-child(2) {
-  font-size: 13px;
+.widget_paris_span_unit {
+  font-size: 0.86em;
   font-weight:700;
-}
-
-/*span.widget_paris_span_l1_font {
-  font-size: 30px;
-  line-height: 1.3em;
-}
-span.widget_paris_span_l4_font {
-  font-size: 22px;
-  padding-left: 5px
-}
-span.widget_paris_span_l2_font {
-  font-size: 14px;
-
-}
-
-span.widget_paris_span_l5_font {
-  font-size: 30px;
-  font-weight:700;
-  padding-left: 5px;
-}
-span.widget_paris_span_l6_font {
-  font-size: 13px;
-  font-weight:700;
-}
-*/
-section.widget_paris_bg div.divider
-{
-  float:left;
-  display: inline;
-  width: 1px;
-  height: 81px;
-  margin: 13px 0px;
-  border-left: 1px solid #9c9695;
 }

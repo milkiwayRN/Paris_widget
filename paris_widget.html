@@ -3,66 +3,56 @@
 <head>
   <title>my widget</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-  <link href = "paris_widget.css" rel = "stylesheet">
+  <link href="paris_widget.css" rel="stylesheet">
 </head>
 <body>
 <section class="widget_paris_bg">
-  <main class="widget_paris_main">
-
-        <div class="widget_paris_weather_infobar">
-          <div class = "widget_paris_date">
-            <span class = "widget_paris_span_l1_font">Friday</span>
-            </br>
-            <span class = "widget_paris_span_l2_font">August, 23rd</span>
-          </div>
-          <div class="widget_paris_about_weather">
-            <span class = "widget_paris_span_l3_font">12<sup>o</sup></span>
-            </br>
-            <span class = "widget_paris_span_l4_font">Paris, France</span>
-
-            </br>
-            <span class = "widget_paris_span_l5_font"><img src = "widget_paris/Wind_wdgt_prs.png"> 14
-              <span class = "widget_paris_span_l6_font" >mph</span>
-            </span>
-
-
-          </div>
-        </div>
-
-    <ul class="widget_paris_sidebar">
-      <li class = "widget_paris_button but_wdgt_prs_back">
-        <img src = "widget_paris/Back_wdgt_prs.png">
-      </li>
-          <li class="widget_paris_sidebar_content">
-            <span >Monday</span></br>
-            <img src="widget_paris/Rain_wdgt_prs.png"></br>
-            <span> 10<sup>o</sup></span>
+  <div class="widget_paris">
+    <div class="widget_paris_weather_infobar">
+      <time class="widget_paris_date" datetime="2017-09-23">
+        <span class="widget_paris_span_day_of_week">Friday</span><br/>
+        <span class="widget_paris_span_date">August, 23rd</span>
+      </time>
+      <div class="widget_paris_about_weather">
+        <span class="widget_paris_span_temp">12°</span><br/>
+        <span class="widget_paris_span_location">Paris, France</span><br/>
+        <span class="widget_paris_span_wind_speed"><img src="widget_paris/Wind_wdgt_prs.png"> 14</span>
+        <span class="widget_paris_span_unit" >mph</span>
+      </div>
+    </div>
+    <div class="widget_paris_sidebar">
+      <div class="layout">
+        <button class="widget_paris_button_prev">
+        <img src="widget_paris/Back_wdgt_prs.png">
+        </button>
+        <ul class="widget_paris_sidebar_list_predictions">
+          <li>
+            <span >Monday</span><br/>
+            <img src="widget_paris/Rain_wdgt_prs.png"><br/>
+            <span> 10°</span>
           </li>
-        <div class="divider"></div>
-          <li class="widget_paris_sidebar_content">
-            <span >Tuesday</span></br>
-            <img src="widget_paris/Cloudy_wdgt_prs.png"></br>
-            <span> 15<sup>o</sup></span>
+          <li>
+            <span >Tuesday</span><br/>
+            <img src="widget_paris/Cloudy_wdgt_prs.png"><br/>
+            <span> 15°</span>
           </li>
-        <div class="divider"></div>
-          <li class="widget_paris_sidebar_content">
-            <span >Wednesday</span></br>
-            <img src="widget_paris/Sunny_wdgt_prs.png"></br>
-            <span> 23<sup>o</sup></span>
+          <li>
+            <span >Wednesday</span><br/>
+            <img src="widget_paris/Sunny_wdgt_prs.png"><br/>
+            <span> 23°</span>
           </li>
-        <div class="divider"></div>
-          <li class="widget_paris_sidebar_content">
-            <span >Thursday</span></br>
-            <img src="widget_paris/Overcast_wdgt_prs.png"></br>
-            <span> 18<sup >o</sup></span>
+          <li>
+            <span >Thursday</span><br/>
+            <img src="widget_paris/Overcast_wdgt_prs.png"><br/>
+            <span> 18°</span>
           </li>
-      <li class = "widget_paris_button but_wdgt_prs_next">
-        <img src = "widget_paris/Next_wdgt_prs.png">
-      </li>
-    </ul>
-
-
-  </main>
+        </ul>
+        <button class="widget_paris_button_next">
+          <img src="widget_paris/Next_wdgt_prs.png">
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
 </body>
 </html>
