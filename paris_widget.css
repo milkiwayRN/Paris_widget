@@ -15,7 +15,7 @@ html {
 }
 
 .widget_paris {
-  background-image: url("widget_paris/Paris_wdgt_prs.png");
+  background-image: url("widget_paris/paris.png");
   background-size: 100% 100%;
   position: relative;
   width: 46.4rem;
@@ -24,31 +24,30 @@ html {
   top: 4.6rem;
 }
 
-.widget_paris_sidebar {
+.container {
+  background: rgba(0,0,0,0.3);
   height: 7.2rem;
   width: 100%;
   position: absolute;
   bottom: 0rem;
 }
 
-.widget_paris_sidebar > .layout {
+.container > .layout {
   width: 81%;
   height: 100%;
   margin: 0rem auto;
   /*border: 1px solid green;*/
 }
 
-.widget_paris_sidebar .layout button {
+.container button {
   position: absolute;
   top: 0rem;
   bottom: 0rem;
   margin: auto 0rem;
-  height: 2.66rem;
-  background: none;
   border: none;
 }
 
-.widget_paris_sidebar > .layout button:focus {
+.container  button:focus {
   outline: none;
 }
 
@@ -62,10 +61,10 @@ html {
   /*border: 1px solid yellow;*/
 }
 
-.widget_paris_sidebar_list_predictions > li {
-  float: left;
-  height: 5.4rem;
+.widget_paris_sidebar_list_predictions .col-sm-3 {
+  /*float: left;*/
   width: 8.53rem;
+  height: 5.4rem;
   margin: 0.86rem 0rem;
   box-sizing: border-box;
   padding: 0rem;
@@ -73,18 +72,14 @@ html {
   /*border: 1px solid white;*/
 }
 
-.widget_paris_sidebar_list_predictions > li:last-child {
-  border: none;
-}
-
-.widget_paris_sidebar_list_predictions > li > span:last-child {
+.widget_paris_sidebar_list_predictions > .col-sm-3 > span:last-child {
   position: absolute;
-  bottom: 0.66rem;
+  bottom: 0rem;
   margin-left: -0.66rem;
 }
 
-.widget_paris_sidebar_list_predictions > li > img {
-  margin-top: 0.33rem;
+.widget_paris_sidebar_list_predictions > .col-sm-3:last-child {
+  border: none;
 }
 
 .widget_paris_weather_infobar {
@@ -113,6 +108,63 @@ html {
   float: left;
   width: auto;
   /*border: 1px solid green;*/
+}
+
+.widget_paris_button_prev {
+  background: none;
+  background-image: url("widget_paris/Back_wdgt_prs.png");
+  background-size: 100% 100%;
+  height: 1.26rem;
+  width: 0.73rem;
+}
+
+.widget_paris_button_next {
+  background: none;
+  background-image: url("widget_paris/Next_wdgt_prs.png");
+  background-size: 100% 100%;
+  height: 1.26rem;
+  width: 0.8rem;
+}
+
+.icon_lp {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0.33rem auto 0rem auto;
+}
+
+.rain {
+  background-image: url("widget_paris/Rain_wdgt_prs.png");
+  height: 2.53rem;
+  width: 2.4rem;
+}
+
+.cloudy {
+  background-image: url("widget_paris/Cloudy_wdgt_prs.png");
+  height: 1.67rem;
+  width: 2.73rem;
+}
+
+.sunny {
+  background-image: url("widget_paris/Sunny_wdgt_prs.png");
+  height: 2.33rem;
+  width: 2.46rem;
+}
+
+.overcast {
+  background-image: url("widget_paris/Overcast_wdgt_prs.png");
+  height: 2.33rem;
+  width: 3.2rem;
+}
+
+.icon_wind {
+  display: inline-block;
+  background-image: url("widget_paris/Wind_wdgt_prs.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2.86rem;
+  height: 1.8rem;
+
 }
 
 .widget_paris_span_day_of_week {
@@ -147,4 +199,77 @@ html {
 .widget_paris_span_unit {
   font-size: 0.86em;
   font-weight:700;
+}
+
+@media screen and (max-width: 600px) {
+
+  .widget_paris_bg {
+    width: 100%;
+  }
+
+  .widget_paris {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: 10%;
+    left: 0;
+  }
+
+
+    .widget_paris_weather_infobar {
+      background: rgba(0,0,0,0.3);
+      top: 0;
+      right: 0;
+    }
+
+    .widget_paris_date{
+      float: none;
+      display: block;
+      margin: 1em auto;
+
+
+    }
+
+    .widget_paris_about_weather{
+      float: none;
+    }
+
+    .container {
+      width: 8rem;
+      float:left;
+      height: 100%;
+      position: relative;
+      padding: 5% 0rem;
+      box-sizing: border-box;
+    }
+
+    .container > .layout {
+      height: 90%;
+      margin: 0rem auto;
+
+    }
+
+    .widget_paris_sidebar_list_predictions {
+      width: 6rem;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .widget_paris_sidebar_list_predictions  .col-sm-3 {
+      margin: 0;
+      height: 5.53rem;
+      width: 6rem;
+      border-right: none;
+      border-bottom: 1px solid white;
+    }
+
+
+
+    .container   button {
+      position: relative;
+      display: block;
+      margin: 0rem auto;
+      transform: rotate(90deg);
+    }
+
 }

@@ -2,8 +2,11 @@
 <html>
 <head>
   <title>my widget</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link href="paris_widget.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <section class="widget_paris_bg">
@@ -16,43 +19,42 @@
       <div class="widget_paris_about_weather">
         <span class="widget_paris_span_temp">12°</span><br/>
         <span class="widget_paris_span_location">Paris, France</span><br/>
-        <span class="widget_paris_span_wind_speed"><img src="widget_paris/Wind_wdgt_prs.png" alt=""> 14</span>
+        <span class="widget_paris_span_wind_speed"><i class="icon_wind"></i> 14</span>
         <span class="widget_paris_span_unit" >mph</span>
       </div>
     </div>
-    <div class="widget_paris_sidebar">
+    <div class="container">
       <div class="layout">
         <button class="widget_paris_button_prev">
-        <img src="widget_paris/Back_wdgt_prs.png" alt="">
         </button>
-        <ul class="widget_paris_sidebar_list_predictions">
-          <li>
-            <span >Monday</span><br/>
-            <img src="widget_paris/Rain_wdgt_prs.png" alt=""><br/>
+        <ul class="widget_paris_sidebar_list_predictions row">
+          <li class="col-sm-3">
+            <span>Monday</span><br/>
+            <i class="icon_lp rain"></i>
             <span> 10°</span>
           </li>
-          <li>
-            <span >Tuesday</span><br/>
-            <img src="widget_paris/Cloudy_wdgt_prs.png" alt=""><br/>
+          <li class="col-sm-3">
+            <span>Tuesday</span><br/>
+            <i class="icon_lp cloudy"></i>
             <span> 15°</span>
           </li>
-          <li>
-            <span >Wednesday</span><br/>
-            <img src="widget_paris/Sunny_wdgt_prs.png" alt=""><br/>
-            <span> 23°</span>
+          <li class="col-sm-3">
+            <span>Wednesday</span><br/>
+            <i class="icon_lp sunny"></i>
+            <span > 23°</span>
           </li>
-          <li>
-            <span >Thursday</span><br/>
-            <img src="widget_paris/Overcast_wdgt_prs.png" alt=""><br/>
-            <span> 18°</span>
+          <li class="col-sm-3">
+            <span>Thursday</span><br/>
+            <i class="icon_lp overcast"></i>
+            <span > 18°</span>
           </li>
         </ul>
         <button class="widget_paris_button_next">
-          <img src="widget_paris/Next_wdgt_prs.png" alt="">
         </button>
       </div>
     </div>
   </div>
 </section>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
